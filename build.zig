@@ -61,7 +61,7 @@ pub fn build(b: *std.Build) void {
             .flags = &.{},
         });
     }
-    lib.installConfigHeader(config_header);
+    //lib.installConfigHeader(config_header);
     lib.installHeadersDirectory(flac_dep.path("include"), "", .{});
     b.installArtifact(lib);
 }
